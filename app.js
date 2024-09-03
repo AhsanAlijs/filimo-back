@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors('*'));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/storage', express.static(path.join(__dirname, 'storage')));
+app.use('/storage', express.static('/app/storage'));
 
 app.use('/subscriptions', subscriptionRouter)
 app.use('/auth', authRouter);
