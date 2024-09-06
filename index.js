@@ -11,4 +11,4 @@ db.once('open', () => {
   console.log('MONGO: successfully connected to db');
 });
 
-app.listen(3000)
+app.listen(3000);
